@@ -215,6 +215,15 @@ elif [ "$CODE" != 200 ]; then
   die "Could not read the app ($CODE): $(jv 'd["error"]["message"]')"
 fi
 
+# 3e. Google Search off: answers come from the Graywing files, not the web
+api PATCH "$ENGINE/assistants/default_assistant?updateMask=webGroundingType" \
+  '{"webGroundingType":"WEB_GROUNDING_TYPE_DISABLED"}'
+if [ "$CODE" = 200 ] && [ "$(jv 'd.get("webGroundingType","")')" = "WEB_GROUNDING_TYPE_DISABLED" ]; then
+  ok "Google Search: off (answers use the Graywing files only)"
+else
+  warn "Could not turn off Google Search ($CODE): $(jv 'd["error"]["message"]'). Turn it off under Configurations > Assistant."
+fi
+
 api GET "$ENGINE/widgetConfigs/default_search_widget_config"
 CONFIG_ID="$(jv 'd["configId"]')"
 [ -n "$CONFIG_ID" ] || die "Could not read the app's web address."

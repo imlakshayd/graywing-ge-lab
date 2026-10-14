@@ -44,6 +44,7 @@ It's safe to run the script again: it reuses what's already there and never dupl
 
 ## Good to know
 
+- **Google Search is turned off** in the app, so answers come from the Graywing files, not the web.
 - Email and calendar are **simulated as files** in Drive (the "Gmail (simulated)" and "Calendar (simulated)" folders), not real mailboxes.
 - The data is set around **Thursday, Oct 15, 2026**. Answers that count days ("41 days to renewal") assume that date.
 - The Google Drive connector only searches your own Drive, so each person sees only their own copy of the data.

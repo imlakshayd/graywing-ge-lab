@@ -9,8 +9,9 @@ Everything you need to set up a Gemini Enterprise app over the demo data for **G
 | `graywing-demo-data.zip` | The demo data: 124 files (spreadsheets, documents, manuals, simulated email and calendar printouts, test photos) in one folder per team. The setup script downloads this file; nothing else in the repo is part of the data. |
 | `setup/PASTE-INTO-CLOUD-SHELL.txt` | The setup script, ready to paste into Cloud Shell. |
 | `setup/graywing-setup.sh` | The same script as a plain file. |
-| `agents/STARTER-PROMPTS.md` | Build cards for five no-code agents (Talent Scout, Budget Watch, Deal Desk, FieldFix, Churn Radar): instructions to paste and prompts to test with. |
-| `agents/ANSWER-KEY.md` | For every test prompt, roughly what a good answer contains, where the facts come from, and signs of a wrong answer. |
+| `agents/Graywing - Build Your Own Agent Starter Prompts.docx` | The starter prompts for building six no-code agents (Churn Radar, FieldFix, Deal Desk, Talent Scout, Budget Watch, Chief of Staff), with three test questions each and rounds 2-3 to improve them. |
+| `agents/STARTER-PROMPTS.md` | The same document, word for word, readable on GitHub. |
+| `agents/ANSWER-KEY.md` | One quick table per agent: each test question, what a good answer roughly says, and what makes it wrong. |
 | `challenge/EASTER-EGG-HUNT.md` | Five movie references hidden in Graywing's files: one challenge per agent, answers at the bottom. |
 
 ## Get started (about 2 minutes)
@@ -37,7 +38,7 @@ It's safe to run the script again: it reuses what's already there and never dupl
 
 ## Then
 
-- **Build an agent:** pick a card in `agents/STARTER-PROMPTS.md`, create the agent in the app (Agents > + New agent), add Google Drive, and try its test prompts.
+- **Build an agent:** pick one of the six agents in the starter prompts document, create it in the app (Agents > + New agent > Chat agent), add Google Drive, and ask its three test questions.
 - **Check the answers:** compare them with `agents/ANSWER-KEY.md`. Wording will differ; check the facts.
 - **Hunt for the Easter eggs:** see `challenge/EASTER-EGG-HUNT.md`.
 

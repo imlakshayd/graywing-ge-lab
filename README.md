@@ -22,7 +22,7 @@ You need a Google Cloud project where you can turn on Gemini Enterprise (for exa
 2. Run the setup, using either option:
    - **One line:**
      ```
-     bash <(curl -fsSL https://raw.githubusercontent.com/imlakshayd/graywing-ge-lab/main/setup/graywing-setup.sh)
+     bash <(curl -fsSL https://raw.githubusercontent.com/tridorian/graywing-ge-lab/main/setup/graywing-setup.sh)
      ```
    - **Paste:** copy the whole of `setup/PASTE-INTO-CLOUD-SHELL.txt` into Cloud Shell and press Enter.
 3. Watch the six steps finish. The script:

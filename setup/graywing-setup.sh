@@ -7,7 +7,7 @@
 set -uo pipefail
 
 # ---- settings -------------------------------------------------------------------------------------------
-DATA_URL="${DATA_URL:-https://raw.githubusercontent.com/imlakshayd/graywing-ge-lab/main/graywing-demo-data.zip}"          # gs://... or https://... zip of "Graywing Ag Systems (Demo Data)"
+DATA_URL="${DATA_URL:-https://raw.githubusercontent.com/tridorian/graywing-ge-lab/main/graywing-demo-data.zip}"          # gs://... or https://... zip of "Graywing Ag Systems (Demo Data)"
 LOCATION="${GE_LOCATION:-global}"            # Gemini Enterprise location: global | us | eu
 APP_ID="${APP_ID:-graywing-ag-systems}"
 APP_NAME="${APP_NAME:-Graywing Ag Systems}"
